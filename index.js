@@ -22,10 +22,6 @@ function init() {
 
 }
 
-function game() {
-	
-}
-
 function addFoo() {
 	app.foo++;
 }
@@ -41,4 +37,3 @@ function getRndInteger(min, max) {
 }
 
 init();
-game();

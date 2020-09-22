@@ -23,7 +23,7 @@
 				</tr>
 				<tr v-for="robot in robots">
 					<td>{{ robot.getName() }}</td>
-					<td>{{ robot.getActivity() }}<progress class="progress is-success" :value="robot.progress" :max="robot.maxProgress/5"></progress></td>
+					<td>{{ robot.getActivity() }}<progress class="progress is-success" :value="robot.getProgress()" :max="robot.getMaxProgress()/5"></progress></td>
 				</tr>
 			</table>
 		</div>

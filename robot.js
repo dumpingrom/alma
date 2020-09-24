@@ -109,7 +109,7 @@ class Robot {
 	next() {
 		this.setProgress(0);
 		clearInterval(this.updateProgress);
-		this.updateProgress = setInterval(() => { this.setProgress(this.getProgress() + 1); }, .1);
+		this.updateProgress = setInterval(() => { this.progress++ }, 1);
 
 		if(app.foobar > 0) {
 			if (this.getActivity() === 'selling foobar' || this.getActivity() === 'moving') {
